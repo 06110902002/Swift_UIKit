@@ -23,6 +23,8 @@
 		6B8A0C5F247CFE6300777C04 /* KeyboardMgr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8A0C5E247CFE6300777C04 /* KeyboardMgr.swift */; };
 		6B8A0C61247D025D00777C04 /* AbcKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8A0C60247D025D00777C04 /* AbcKeyboard.swift */; };
 		6BA0E4FF24776E9700E13B97 /* UIView+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA0E4FE24776E9700E13B97 /* UIView+Resize.swift */; };
+		6BFE85062487D3A100C557E6 /* GuideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE85052487D3A100C557E6 /* GuideVC.swift */; };
+		6BFED36F2488CF82002AA7E9 /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFED36E2488CF82002AA7E9 /* GuideView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		6B8A0C5E247CFE6300777C04 /* KeyboardMgr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardMgr.swift; sourceTree = "<group>"; };
 		6B8A0C60247D025D00777C04 /* AbcKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbcKeyboard.swift; sourceTree = "<group>"; };
 		6BA0E4FE24776E9700E13B97 /* UIView+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Resize.swift"; sourceTree = "<group>"; };
+		6BFE85052487D3A100C557E6 /* GuideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideVC.swift; sourceTree = "<group>"; };
+		6BFED36E2488CF82002AA7E9 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,7 @@
 		6B6B6917247683F90039D88E /* SwiftUiKit */ = {
 			isa = PBXGroup;
 			children = (
+				6BFE85042487D37F00C557E6 /* guide */,
 				6B5F0A1E247BDD010070EAD2 /* keyboard */,
 				6BA0E4FD24776E7A00E13B97 /* category */,
 				6B6B69492476848D0039D88E /* scrollLabel */,
@@ -174,6 +179,15 @@
 				6BA0E4FE24776E9700E13B97 /* UIView+Resize.swift */,
 			);
 			path = category;
+			sourceTree = "<group>";
+		};
+		6BFE85042487D37F00C557E6 /* guide */ = {
+			isa = PBXGroup;
+			children = (
+				6BFE85052487D3A100C557E6 /* GuideVC.swift */,
+				6BFED36E2488CF82002AA7E9 /* GuideView.swift */,
+			);
+			path = guide;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,7 +324,9 @@
 				6B8A0C61247D025D00777C04 /* AbcKeyboard.swift in Sources */,
 				6B8A0C5D247CF35400777C04 /* RandomNumberKeyboard.swift in Sources */,
 				6B8A0C5F247CFE6300777C04 /* KeyboardMgr.swift in Sources */,
+				6BFE85062487D3A100C557E6 /* GuideVC.swift in Sources */,
 				6B6B691D247683F90039D88E /* ViewController.swift in Sources */,
+				6BFED36F2488CF82002AA7E9 /* GuideView.swift in Sources */,
 				6B5F0A22247BEDF00070EAD2 /* NumberKeyboard.swift in Sources */,
 				6B5F0A1D247BCAAC0070EAD2 /* KeyboardVC.swift in Sources */,
 				6B5F0A20247BDD240070EAD2 /* KeyboardBaseView.swift in Sources */,

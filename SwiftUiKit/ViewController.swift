@@ -28,17 +28,25 @@ class ViewController: UIViewController {
         button.setTitle("键盘", for: .normal);
         self.view.addSubview(button);
         
+        let guide = UIButton();
+        guide.backgroundColor = UIColor.gray
+        guide.tag = 29;
+        guide.frame = CGRect.init(x: 230, y: 50, width: 100, height: 50)
+        guide.addTarget(self, action: #selector(onClickListener(btn:)), for:.touchUpInside)
+        guide.setTitle("新手引导", for: .normal);
+        self.view.addSubview(guide);
+        
         
         
 
         self.upLabel.backgroundColor = UIColor.green;
        self.upLabel.tag = 21;
        self.upLabel.addTarget(self, action: #selector(onClickListener(btn:)), for:.touchUpInside)
-       self.upLabel.setTitle("start", for:.normal)
+       self.upLabel.setTitle("滚动标签", for:.normal)
        self.upLabel.frame = CGRect.init(x: 10, y: 50, width: 100, height: 50)
         self.view.addSubview(upLabel)
         
-        let parentView : UIView = UIView.init(frame: CGRect.init(x: 50, y: 160, width: 180, height: 40))
+        let parentView : UIView = UIView.init(frame: CGRect.init(x: 10, y: 160, width: 180, height: 40))
         self.view.addSubview(parentView)
         parentView.backgroundColor = UIColor.blue
         parentView.clipsToBounds = true
@@ -69,6 +77,11 @@ class ViewController: UIViewController {
 //            }else{
 //                btn?.setTitle("键盘", for: .normal)
 //            }
+            break;
+            
+           case 29:
+                self.navigationController?.pushViewController(GuideVC(), animated: false);
+
             break;
             
            default:
